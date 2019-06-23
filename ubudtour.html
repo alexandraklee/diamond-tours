@@ -1,0 +1,41 @@
+---
+layout: default
+title: Ubud Tours
+banner-title: Ubud
+banner-image: ubud/ubud-rice.jpg
+places:
+- name: Barong Keris Dance
+  slogan: A colourful, entertaining and iconic show.
+  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
+  to-bring: Water, Sunblock, Camera.
+- name: Batuan Temple
+  slogan: Traditional Balinese temple featuring stone carvings & sculptures
+  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
+  to-bring: Sarongs required for entrance.
+- name: Sacred Monkey Forest Sanctuary
+  slogan: Over 700 monkeys in a free-roam monkey preservation sanctuary
+  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
+  to-bring: 50, 000 IDR Entrance Fee.
+- name: Tegalalang Rice Terraces
+  slogan: 
+  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
+  to-bring: Sarongs required for entrance.
+
+
+---
+
+<!-- Locations and descriptions -->
+<section class="gridnoGutter block">
+  {% for place in page.places %}
+  <div class="col-4_sm-6_xs-12">
+    <h2> {{place.name}} </h2>
+    <h5> {{place.slogan}} </h5>
+  </div>
+  <div class="col-8_sm-6_xs-12">
+    <p> {{place.description}} </p>
+    <br>
+    <p> {{place.to-bring}} </p>
+  </div>
+  {% endfor %}
+  {% include tourtext.html %}
+</section>

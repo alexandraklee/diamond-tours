@@ -1,0 +1,72 @@
+---
+layout: default
+title: Tours
+banner-title: Tours
+banner-image: greenbanner.jpg
+tours:
+- name: Ubud
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
+  tag: 
+  - family
+  - beach
+  images:
+  - url: ubud/monkeys.jpg
+    title: Photo title
+  - url: ubud/monkeys.jpg
+    title: Photo title
+  - url: ubud/monkeys.jpg
+    title: Photo title
+- name: Tanah Lot
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
+  tag: 
+  - family
+  - beach
+  images:
+  - url: ubud/monkeys.jpg
+    title: Photo title
+  - url: ubud/monkeys.jpg
+    title: Photo title
+  - url: ubud/monkeys.jpg
+    title: Photo title
+- name: East Bali
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
+  tag: 
+  - family
+  - beach
+  images:
+  - url: ubud/monkeys.jpg
+    title: Photo title
+  - url: ubud/monkeys.jpg
+    title: Photo title
+  - url: ubud/monkeys.jpg
+    title: Photo title
+
+---
+
+
+
+<!-- Tours division -->
+<section>
+  <div class="grid-noGutter block">
+  {% for tour in page.tours%}
+    <div class="col-4_sm-12">
+      <h2> {{tour.name}} </h2>
+      <p> {{tour.description}} </p>
+      {% for tag in tour.tags %}
+      <p> {{tag}} </p>
+      {% endfor %}
+    </div>
+
+    <div class="col-8_sm-12">
+      <div class="col-4">
+        {% for image in tour.images %}
+        <!-- Tour Images -->
+        <div class="tour-image" style="background-image:url('/images/{{tour.url}}');">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+  {% include tourtext.html %}
+</section>
