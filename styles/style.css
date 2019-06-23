@@ -178,13 +178,14 @@ a.navlink {
 }
 
 .banner-text {
-  background-color: #2736146e;
+  background-color: #0000006e;
   border-radius: 8px;
   padding: 1rem;
   color: #FFFFFF;
 }
 
 .photo-gallery {
+  padding-top: 1rem;
   column-count: 3;
   column-gap: 1rem;
 }
