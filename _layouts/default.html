@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> {{page.title}} </title>
+    <!-- Page icon -->
+    <link rel="icon" type="image/png" href="images/diamond.png"/>
+
+    <!-- Gridlex stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="/styles/style.css">
+ </head>
+ <body>
+   <header class="grid-noGuttter-center center">
+      <nav class="col-middle">
+         <a href="/about" class="navlink">
+            About Us
+         </a>
+         <a href="/cars" class="navlink">
+         Transportation
+         </a>
+      </nav>
+      <!-- Home button -->
+      <div class="col-middle center">
+         <h1>
+            <a href="/home"> &#9830; </a>
+         </h1>
+      </div>
+      <nav class="col-middle center">
+         <a href="/tours" class="navlink">
+            Tours
+         </a>
+         <a href="/contact" class="navlink">
+            Contact Us
+         </a>
+        </nav>
+   </header>
+   <!-- Banner -->
+   <section class="grid-center-noGutter centerbanner">
+      <div class="col-middle center">
+         <div class="centered banner-text">
+            <h1>
+               {{page.banner-title}}
+            </h1>
+            <h2>
+               Transport  <span style="color:#beff9f"> &#9830; </span> Transfers <span style="color:#beff9f"> &#9830; </span> Tours
+            </h2>
+         </div>
+      </div>
+   </section>
+
+   <!-- page content -->
+   {{content}}
+
+   <!-- Footer -->
+   <footer class="grid">
+      <div class="col-5_sm-6">
+         <h2>
+            Diamond Tours Bali 2019
+         </h2>
+      </div>
+      <div class="col-7_sm12 right">
+         <a href="/about" class="footlink">
+            About Us
+         </a>
+         <a href="/cars" class="footlink">
+            Transportation
+         </a>
+         <a href="/tours" class="footlink">
+            Tours
+         </a>
+         <a href="/contact" class="footlink">
+            Contact Us
+         </a>
+      </div>
+   </footer>
+ </body>
+</html>
