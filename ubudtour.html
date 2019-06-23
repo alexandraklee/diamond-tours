@@ -37,6 +37,18 @@ photos:
   caption: Sacred Monkey Sanctuary
 tourprice: Rp 650 000
 ---
+
+<!-- Ubud image gallery -->
+<section>
+    <div class="popup-gallery block photo-gallery">
+      {% for photo in page.photos %}
+      <a class="item" href="/images/ubud/{{photo.image}}" title="{{photo.caption}}">
+        <img src="/images/ubud/{{photo.image}}">
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
 <!-- Locations and descriptions -->
 <section>
   {% for place in page.places %}
@@ -52,20 +64,10 @@ tourprice: Rp 650 000
     </div>
   </div>
   {% endfor %}
+</section>
+
   {% include tourtext.html %}
-</section>
-
-<!-- Ubud image gallery -->
-<section>
-  <div class="popup-gallery photo-gallery">
-    {% for photo in page.photos %}
-    <a class="item" href="/images/ubud/{{photo.image}}" title="{{photo.caption}}">
-      <img src="/images/ubud/{{photo.image}}">
-    </a>
-    {% endfor %}
-  </div>
-</section>
-
+  
 <!-- Book now button -->
 <section>
   <div class="relative">
