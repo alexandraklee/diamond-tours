@@ -106,6 +106,15 @@ a.navlink {
   margin-top: 0.5rem;
 }
 
+.bigbutton{
+  display: inline-block;
+  text-decoration: none;
+  color: #476B2E;
+  border: 2px solid;
+  width: 100%;
+  text-align: center;
+}
+
 .center {
   align-content: center;
   text-align: center;

@@ -3,6 +3,7 @@ layout: default
 title: Ubud Tours
 banner-title: Ubud
 banner-image: ubud/ubud-rice.jpg
+banner-subtitle: A Full Day Tour in Ubud
 places:
 - name: Barong Keris Dance
   slogan: A colourful, entertaining and iconic show.
@@ -17,15 +18,22 @@ places:
   description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
   to-bring: 50, 000 IDR Entrance Fee.
 - name: Tegalalang Rice Terraces
-  slogan: 
-  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
-  to-bring: Sarongs required for entrance.
-
-
+  slogan: Ubud's most iconic and beautiful lush rice paddies
+  description: Featuring the famous 'Love Bali' sign.
+  to-bring: Small entrance fee
+- name: Tegenungan Waterfall
+  slogan: Expereince Bali's natural waterfall with its 25 meter water cascade
+  description: Featuring the famous 'Love Bali' sign.
+  to-bring: Small entrance fee
+photos:
+- image: ubud-rice.jpg
+  caption: Ubud Rice Terrace
+- image: monkeys.jpg
+  caption: Sacred Monkey Sanctuary
+tourprice: Rp 650 000
 ---
-
 <!-- Locations and descriptions -->
-<section class="gridnoGutter block">
+<section class="grid-noGutter block">
   {% for place in page.places %}
   <div class="col-4_sm-6_xs-12">
     <h2> {{place.name}} </h2>
@@ -34,8 +42,27 @@ places:
   <div class="col-8_sm-6_xs-12">
     <p> {{place.description}} </p>
     <br>
-    <p> {{place.to-bring}} </p>
+    <p> <strong>What to Bring/Know: </strong>{{place.to-bring}} </p>
   </div>
   {% endfor %}
   {% include tourtext.html %}
+</section>
+
+<!-- Ubud image gallery -->
+<section>
+  <div class="popup-gallery photo-gallery">
+    {% for photo in page.photos %}
+    <a class="item" href="/images/ubud/{{photo.image}}" title="{{photo.caption}}">
+      <img src="/images/ubud/{{photo.image}}">
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Book now button -->
+<section>
+  <div class="relative">
+    <span class="price"> {{page.tourprice}} </span>
+    <a href="/contact" class="bigbutton"> Book Now! </a>
+  </div>
 </section>
