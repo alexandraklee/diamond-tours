@@ -55,7 +55,9 @@ section {
   .centerbanner {
     max-height: 30vh;
   }
-
+  .photo-gallery {
+    column-count: 1;
+  }
 }
 
 /* ---- Typography ---- */
@@ -95,7 +97,7 @@ a h2 {
   padding: 0;
 }
 
-/* List and bullets */
+/*------ List and bullets ------*/
 ul {
   margin-left: 1.5rem;
 }
@@ -105,7 +107,7 @@ ul {
   content: '✓  ';
 }
 
-/* Links */
+/*-------- Links & Buttons ------------*/
 a:link, a:visited {
   text-decoration: none;
   color: rgb(0, 128, 17);
@@ -145,6 +147,8 @@ a.navlink {
   padding: 1rem;
 }
 
+
+/*---------- Classes -----------*/
 .center {
   align-content: center;
   text-align: center;
@@ -172,6 +176,17 @@ a.navlink {
   border-radius: 8px;
   padding: 1rem;
   color: #FFFFFF;
+}
+
+.photo-gallery {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.photo-gallery .item {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  width:100%
 }
 
 /* ---------- HEADER & FOOTER --------- */
