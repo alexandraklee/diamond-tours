@@ -41,6 +41,10 @@ section {
   padding: 1vh 10vh;
 }
 
+.padded {
+  padding-right: 1rem;
+}
+
 /* ----- Banner ----- */
 .banner {
   background-size: cover;
@@ -234,6 +238,8 @@ a.navlink {
 
 .bg-fixed {
   background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 /* ---------- HEADER & FOOTER --------- */
@@ -246,15 +252,43 @@ header {
   background-color: rgba(250, 250, 250, 0.705);
 }
 
+.mobile-header {
+  padding: 0 1rem;
+  position: fixed;
+  display: none;
+  top:0;
+  left:0;
+  right:0;
+  background-color: rgba(250, 250, 250, 0.705);
+}
+
+.mobile-header .col-6 {
+  padding:0;
+}
+
+
 .hamburger {
   display: none;
   border: none;
   padding: 1rem;
 }
 
+.hamburger h1 a {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+
 @media (max-width: 576px) {
+  body {
+    padding-top: 4rem;
+  }
+  .mobile-header {
+    display: flex;
+  }
+
   .hamburger {
-    display: block;
+    display: inline-block;
     padding: 0.75rem;
   }
 }

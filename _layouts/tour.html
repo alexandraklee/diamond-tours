@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!-- Ubud image gallery -->
+<!-- Image gallery -->
 <section>
     <div class="popup-gallery block photo-gallery">
       {% for photo in page.photos %}
@@ -15,8 +15,8 @@ layout: default
 <!-- Locations and descriptions -->
 <section>
   {% for place in page.places %}
-  <div class="grid-noGutter block {{place.theme}}">
-    <div class="col-4_sm-6_xs-12">
+  <div class="grid block {{place.theme}}">
+    <div class="col-4_sm-6_xs-12 padded">
       <h2> {{place.name}} </h2>
       <h5> {{place.slogan}} </h5>
     </div>
