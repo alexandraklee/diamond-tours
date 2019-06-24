@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<!-- Ubud image gallery -->
+<section>
+    <div class="popup-gallery block photo-gallery">
+      {% for photo in page.photos %}
+      <a class="item" href="/images/ubud/{{photo.image}}" title="{{photo.caption}}">
+        <img src="/images/ubud/{{photo.image}}">
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+<!-- Locations and descriptions -->
+<section>
+  {% for place in page.places %}
+  <div class="grid-noGutter block {{place.theme}}">
+    <div class="col-4_sm-6_xs-12">
+      <h2> {{place.name}} </h2>
+      <h5> {{place.slogan}} </h5>
+    </div>
+    <div class="col-8_sm-6_xs-12">
+      <p> {{place.description}} </p>
+      <p> <strong>What to Bring/Know: </strong>{{place.note}} </p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+  {% include tourtext.html %}
+  
+<!-- Book now button -->
+<section>
+  <div class="relative">
+    <span class="price"> {{page.tourprice}} </span>
+    <a href="/contact" class="bigbutton"> Book Now! </a>
+  </div>
+</section>

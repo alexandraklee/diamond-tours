@@ -1,0 +1,89 @@
+---
+layout: tour
+title: Ubud
+description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
+tags:
+- family
+- beach
+- forest
+banner-title: Ubud
+banner-image: ubud/ricefield.jpg
+banner-subtitle: A Full Day Tour in Ubud
+places:
+- name: Barong Keris Dance
+  slogan: A colourful, entertaining and iconic show.
+  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
+  note: Water, Sunblock, Camera.
+  theme: light
+- name: Batuan Temple
+  slogan: Traditional Balinese temple featuring stone carvings & sculptures
+  description: Founded in year 944 isaka (1020 AD), Bali's Batuan Temple is a local Balinese Hindu temple looked after by local Batuan countryside residents. The fiber of chromatic black palm treee is used to make the balinese ornaments throughout the temple and the roof temple. Batuan is a village of artists and craftsmen, old legends and mysterious tales.
+  note: Sarongs required for entrance.
+  theme: dark
+- name: Sacred Monkey Forest Sanctuary
+  slogan: Over 700 monkeys in a free-roam monkey preservation sanctuary
+  description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
+  note: 50, 000 IDR Entrance Fee.
+  theme: light
+- name: Tegalalang Rice Terraces
+  slogan: Ubud's most iconic and beautiful lush rice paddies
+  description: Featuring the famous 'Love Bali' sign.
+  note: Small entrance fee
+  theme: dark
+- name: Tegenungan Waterfall
+  slogan: Expereince Bali's natural waterfall with its 25 meter water cascade
+  description: Featuring the famous 'Love Bali' sign.
+  note: Small entrance fee
+  theme: light
+photos:
+- image: ricefield.jpg
+  caption: Ubud Rice Terrace
+- image: monkeys.jpg
+  caption: Sacred Monkey Sanctuary
+- image: temple.jpg
+  caption: Batuan Temple
+- image: ricefield.jpg
+  caption: Ubud Rice Terrace
+- image: monkeys.jpg
+  caption: Sacred Monkey Sanctuary
+- image: temple.jpg
+  caption: Batuan Temple
+  tourprice: Rp 650 000
+---
+
+<!-- Ubud image gallery -->
+<section>
+    <div class="popup-gallery block photo-gallery">
+      {% for photo in site.photos %}
+      <a class="item" href="/images/tours/{{photo.image}}" title="{{photo.caption}}">
+        <img src="/images/tours/{{photo.image}}">
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+<!-- Locations and descriptions -->
+<section>
+  {% for place in page.places %}
+  <div class="grid-noGutter block {{place.theme}}">
+    <div class="col-4_sm-6_xs-12">
+      <h2> {{place.name}} </h2>
+      <h5> {{place.slogan}} </h5>
+    </div>
+    <div class="col-8_sm-6_xs-12">
+      <p> {{place.description}} </p>
+      <p> <strong>What to Bring/Know: </strong>{{place.note}} </p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+  {% include tourtext.html %}
+  
+<!-- Book now button -->
+<section>
+  <div class="relative">
+    <span class="price"> {{page.tourprice}} </span>
+    <a href="/contact" class="bigbutton"> Book Now! </a>
+  </div>
+</section>

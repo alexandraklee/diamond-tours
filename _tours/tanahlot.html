@@ -1,11 +1,17 @@
 ---
-layout: default
-title: Ubud Tours
+layout: tour
+title: Tanah Lot
+description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex laborum aliquam similique sed possimus esse facere nisi ducimus, hic voluptas nesciunt voluptatem repudiandae eos itaque voluptate autem! Ut, tempore qui!
+description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
+tags:
+- tag-name: family
+- tag-name: beach
+- tag-name: forest
 banner-title: Ubud
 banner-image: ubud/ricefield.jpg
-banner-subtitle: A Full Day Tour in Ubud
+banner-subtitle: A Full Day Tour in Tanah Lot
 places:
-- name: Barong Keris Dance
+- name: Bedugul Lake Bratan
   slogan: A colourful, entertaining and iconic show.
   description: The Barong Keris Dance is the traditional dance story of the Story of Barong and Rangda. The Barong Keris Dance remains one of the most popular and unique dances due to its focus on the Kunti Seraya story, a play performed since the 30's. 
   note: Water, Sunblock, Camera.
@@ -43,42 +49,5 @@ photos:
   caption: Sacred Monkey Sanctuary
 - image: temple.jpg
   caption: Batuan Temple
-  tourprice: Rp 650 000
+tourprice: Rp 650 000
 ---
-
-<!-- Ubud image gallery -->
-<section>
-    <div class="popup-gallery block photo-gallery">
-      {% for photo in page.photos %}
-      <a class="item" href="/images/ubud/{{photo.image}}" title="{{photo.caption}}">
-        <img src="/images/ubud/{{photo.image}}">
-      </a>
-      {% endfor %}
-    </div>
-  </section>
-
-<!-- Locations and descriptions -->
-<section>
-  {% for place in page.places %}
-  <div class="grid-noGutter block {{place.theme}}">
-    <div class="col-4_sm-6_xs-12">
-      <h2> {{place.name}} </h2>
-      <h5> {{place.slogan}} </h5>
-    </div>
-    <div class="col-8_sm-6_xs-12">
-      <p> {{place.description}} </p>
-      <p> <strong>What to Bring/Know: </strong>{{place.note}} </p>
-    </div>
-  </div>
-  {% endfor %}
-</section>
-
-  {% include tourtext.html %}
-  
-<!-- Book now button -->
-<section>
-  <div class="relative">
-    <span class="price"> {{page.tourprice}} </span>
-    <a href="/contact" class="bigbutton"> Book Now! </a>
-  </div>
-</section>

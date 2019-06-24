@@ -4,60 +4,17 @@ title: Tours
 banner-image: greenbanner.jpeg
 banner-title: Diamond Tours Bali
 banner-subtitle: <span style="color:#beff9f"> &#9830; </span> Explore Bali <span style="color:#beff9f"> &#9830; </span>
-tours:
-- theme: light
-  name: Ubud
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
-  tags:
-  - tag-name: family
-  - tag-name: beach
-  - tag-name: forest
-  images:
-  - url: ubud/monkeys.jpg
-    title: Photo title
-  - url: ubud/monkeys.jpg
-    title: Photo title
-  - url: ubud/monkeys.jpg
-    title: Photo title
-- theme: dark
-  name: Tanah Lot
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
-  tags:
-  - tag-name: family
-  - tag-name: beach
-  - tag-name: forest
-  images:
-  - url: ubud/monkeys.jpg
-    title: Photo title
-  - url: ubud/monkeys.jpg
-    title: Photo title
-  - url: ubud/monkeys.jpg
-    title: Photo title
-- theme: light
-  name: East Bali
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos exercitationem laborum quisquam quia voluptatibus et cupiditate ea adipisci veniam, alias, iusto, quam obcaecati? Nisi nostrum debitis sunt temporibus laborum illo.
-  tags:
-  - tag-name: family
-  - tag-name: beach
-  - tag-name: forest
-  images:
-  - url: ubud/monkeys.jpg
-    title: Photo title
-  - url: ubud/monkeys.jpg
-    title: Photo title
-  - url: ubud/monkeys.jpg
-    title: Photo title
 ---
 
 
 
 <!-- Tours division -->
 <section>
-  {% for tour in page.tours%}
+  {% for tour in site.tours%}
     <div class="grid-noGutter block {{tour.theme}}">
     <div class="col-4_sm-12">
-        <a href="/{{tour.name}}tour">
-          <h2> {{tour.name}} </h2>
+        <a href="{{tour.url}}">
+          <h2> {{tour.title}} </h2>
         </a>
         <p> {{tour.description}} </p>
         {% for tag in tour.tags %}
@@ -65,10 +22,10 @@ tours:
         {% endfor %}
       </div>
       <div class="grid col-8_sm-12">
-        {% for image in tour.images %}
+        {% for photo in tour.photos %}
           <div class="col-4 tags">
             <!-- Tour Images -->
-            <div class="tour-image" style="background-image:url('/images/{{image.url}}');">
+            <div class="tour-image" style="background-image:url('/images/{{photo.image}}');">
             </div>
           </div>
           {% endfor %}

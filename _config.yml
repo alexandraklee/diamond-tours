@@ -46,3 +46,4 @@ collections:
   tours:
     output: true
     permalink: /tours/:path
+    
