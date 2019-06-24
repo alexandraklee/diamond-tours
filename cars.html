@@ -1,0 +1,118 @@
+---
+layout: default
+title: Luxury Tours and Transportation Bali
+banner-title: About Us
+banner-subtitle: Transport  <span class = "diamond"> &#9830; </span> Transfers <span style="color:#beff9f"> &#9830; </span> Tours
+banner-image: cafe.jpg
+
+air-transf:
+- name: Kuta / Nusa Dua
+  price: 250
+- name: Jimbaran / Seminyak
+  price: 300
+- name: Canggu
+  price: 350
+- name: Ubud
+  price: 450
+
+daydrive:
+- name: Half Day
+  price: 450
+- name: Full Day
+  price: 650
+- name: Full Day East Bali
+  price: 800
+- name: Full Day North Bali
+  price: 900
+---
+
+<!-- Cars description -->
+<section id="cars">
+    <div class="block">
+        <!-- Car 1 div -->
+        <div class="grid carspec">
+            <!-- Car 1 image -->
+            <div class="col-6_sm-12 img" style="background-image:url('/images/car1.jpg')"> </div>
+            <!-- Car 1 text -->
+            <div class="col-6_sm-12-middle">
+                    <h5>
+                        Toyota RAV4 Hybrid
+                    </h5>
+                    <h4>
+                        A Super SUV
+                    </h4>
+                    <p>
+                        With available seating up to 8, innovative safety features, a powerful engine, and the latest technology, this Toyota SUV lets you enjoy the ride no matter where you’re going.
+                    </p>
+
+                    <a class="button booknow" href="/contact"> Book Now </a>
+            </div>
+        </div>
+        <br>
+        <!-- Car 2 div -->
+        <div class="grid carspec">
+            <!-- Car 2 text -->
+            <div class="col-6_sm-12-middle cartext">
+                    <h5>
+                        Daihatsu Xenia
+                    </h5>
+                    <h4>
+                        A Marvellous MPV
+                    </h4>
+                    <p>
+                        A 5-7 seater MPV with convertiable back seats and front and back air conditioning, providing full comfort and safety.
+                    </p>
+                    <a class="button booknow" href="/contact"> Book Now </a>
+            </div>
+            <!-- Car 2 image -->
+            <div class="col-6_sm-12 carimage"> <img src="images/car1.jpg" alt="Image of Car 2"> </div> 
+        </div>
+    </div>
+</section>
+
+
+<section>
+        <div class="lightblock">
+          <!-- Transfer Prices -->
+          <div class="grid mob-flip">
+            <div class="col-7_sm-12 bg-image" style="background-image:url('/images/plane.jpg')">
+            </div>
+            <!-- Airport transfers price -->
+            <div class="col-5_sm-12-middle">
+              <h4>Airport Transfers</h4>
+              Airport to:
+              <div class="grid-noGutter">
+                {% for item in page.air-transf %}
+                <div class="col-8_sm-12 text">
+                  <p> {{item.name}} </p>
+                </div>
+                <div class="col-4_sm-12 text">
+                  <p>Rp {{item.price}} <span style="font-size: 0.8rem">000</span></p>
+                </div>
+                {% endfor %}
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="grid mob-flip padded">
+          <!-- Airport transfers price -->
+          <div class="col-5_sm-12-middle">
+              <h4>Half/Full Day</h4>
+              <div class="grid-noGutter">
+                  {% for item in page.daydrive %}
+                  <div class="col-8_sm-12 text">
+                      <p> {{item.name}} </p>
+                  </div>
+                  <div class="col-4_sm-12 text">
+                      <p> Rp {{item.price}} <span style="font-size: 0.8rem">000</span> </p>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+            <div class="col-7_sm-12 bg-image" style="background-image:url('/images/woman-boy.jpg')">
+            </div>
+        </div>
+      
+        <a class="button bigbooknow" href="/contact"> Book Now </a>
+      </section>

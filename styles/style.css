@@ -60,10 +60,27 @@ section {
     column-count: 1;
   }
 
-img, .img {
-  max-height: 40vh;
+  img, .img {
+    margin-top: 1rem;
+  }
 }
- 
+
+.pricecard {
+  padding: 1rem;
+  border: 1px solid rgb(151, 212, 107);
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 12px 20px 5px rgba(0,0,0,.2), 0 10px 10px -5px rgba(0,0,0,.2);  
+}
+.pricename {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: #787878;
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #464646;
 }
 
 /* ---- Typography ---- */
@@ -101,6 +118,10 @@ p, li {
 a h2 {
   margin: 0;
   padding: 0;
+}
+
+.text p {
+  margin: 0.5rem 0;
 }
 
 /*------ List and bullets ------*/
@@ -158,7 +179,7 @@ a.navlink {
 .diamond {
   max-height: 15%;
   max-width: auto;
-  style="color:#beff9f";
+  color:#beff9f;
 }
 .center {
   align-content: center;
@@ -199,6 +220,13 @@ a.navlink {
   display: inline-block;
   margin-bottom: 0.5rem;
   width:100%
+}
+
+.bg-image {
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed;
+  display: flex;
 }
 
 /* ---------- HEADER & FOOTER --------- */
