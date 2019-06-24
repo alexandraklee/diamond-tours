@@ -65,13 +65,13 @@ tours:
         {% endfor %}
       </div>
       <div class="grid col-8_sm-12">
-        <div class="col-4 tags">
-          {% for image in tour.images %}
-          <!-- Tour Images -->
-          <div class="tour-image" style="background-image:url('/images/{{tour.url}}');">
+        {% for image in tour.images %}
+          <div class="col-4 tags">
+            <!-- Tour Images -->
+            <div class="tour-image" style="background-image:url('/images/{{image.url}}');">
+            </div>
           </div>
-        </div>
-        {% endfor %}
+          {% endfor %}
       </div>
     </div>
   {% endfor %}

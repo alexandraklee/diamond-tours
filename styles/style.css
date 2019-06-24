@@ -31,6 +31,10 @@ img, .img {
   margin-right: auto;
 }
 
+.carimg {
+  min-height: 30vh;
+}
+
 /* ---- UNIVERSAL STYLES --------------------------- */
 /* ---- Layout ---- */
 section {
@@ -225,9 +229,11 @@ a.navlink {
 
 .bg-image {
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
+}
+
+.bg-fixed {
   background-attachment: fixed;
-  display: flex;
 }
 
 /* ---------- HEADER & FOOTER --------- */
@@ -257,7 +263,15 @@ header {
   border: 2px solid #687F4B;
   border-radius: 4px;
   margin: 5px 0;
-  width: 4rem;
+  width: 2rem;
+}
+
+.hamburger:hover div {
+  border-color: #beff9f;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 footer {
@@ -287,4 +301,8 @@ footer a:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+.tour-image {
+  min-height: 100%;
 }
