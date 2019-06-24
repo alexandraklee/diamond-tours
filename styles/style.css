@@ -155,6 +155,11 @@ a.navlink {
 
 
 /*---------- Classes -----------*/
+.diamond {
+  max-height: 15%;
+  max-width: auto;
+  style="color:#beff9f";
+}
 .center {
   align-content: center;
   text-align: center;
