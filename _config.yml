@@ -41,3 +41,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  tours:
+    output: true
+    permalink: /tours/:path
