@@ -158,6 +158,10 @@ ul {
   content: '✓  ';
 }
 
+.tags {
+  display: inline-flex;
+}
+
 /*-------- Links & Buttons ------------*/
 a:link, a:visited {
   text-decoration: none;
@@ -313,8 +317,8 @@ footer {
   padding: 5px;
 }
 
-footer h6 {
-  color: #687F4B;
+footer h5 {
+  color: #9FB980;
 }
 
 .footlink {
@@ -324,7 +328,7 @@ footer h6 {
 
 footer a:link {
   text-decoration: none;
-  color: #dcffe1;
+  color: #9FB980;
   font-weight: 100;
 }
 
