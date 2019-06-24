@@ -34,7 +34,23 @@ img, .img {
 /* ---- UNIVERSAL STYLES --------------------------- */
 /* ---- Layout ---- */
 section {
-  padding: 0 10vh;
+  padding: 1vh 10vh;
+}
+
+/* ----- Banner ----- */
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 40vh;
+  display: flex;
+}
+
+.banner-text {
+  background-color: #0000006e;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #FFFFFF;
 }
 
 .block {
@@ -193,21 +209,6 @@ a.navlink {
   align-content: flex-end;
   padding: 0;
   margin: 0;
-}
-
-.banner {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 40vh;
-  display: flex;
-}
-
-.banner-text {
-  background-color: #0000006e;
-  border-radius: 8px;
-  padding: 1rem;
-  color: #FFFFFF;
 }
 
 .photo-gallery {
