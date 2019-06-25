@@ -45,9 +45,31 @@ section {
   padding-right: 1rem;
 }
 
-.tour-card {
-  border: 1px solid #9FB980;
-  margin-bottom: 1rem;
+.tour-card, .tour-card:hover {
+  /* border: 1px solid #9FB980; */
+  margin-bottom: 4rem;
+  padding: 1rem;
+  font-weight: 400;
+  color: initial;
+  display: block;
+}
+
+.tour-image {
+  min-height: 40vh;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0.5rem;
+  margin: 0 0.2rem;
+}
+
+@media (max-width: 576px) {
+  .tour-image {
+    display: none;
+  }
+  
+  .tour-image:first-of-type {
+    display: block;
+  }
 }
 
 /* ----- Banner ----- */
@@ -136,14 +158,37 @@ p, li {
   margin: 1rem 0;
 }
 
+.photo-list {
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+  .photo-list li {
+    display: none;
+  }
+
+  .photo-list li:first-of-type {
+    display: block;
+  }
+}
+
 .block h2 {
   padding-top: 1rem;
 }
 
+.tour-card p {
+  margin: 1rem 0 0.5rem 0;
+}
+
 .tags {
   display: inline-block;
-  line-height: 0;
+  line-height: 1;
   letter-spacing: 0.3px;
+  color: #476B2E;
+  border: 1px solid #447766;
+  border-radius: 3px;
+  padding: 0.3rem;
+  margin: 0 0.25rem 0.25rem 0;
 }
 
 a h2 {
@@ -160,17 +205,17 @@ ul {
   margin-left: 1.5rem;
 }
 
+.tour-card ul {
+  margin: 0.5rem 0 0 0;
+}
+
 .nobullets, .nobullets li:before {
   list-style: none;
   content: '✓  ';
 }
 
-.tags {
-  display: inline-flex;
-}
-
 /*-------- Links & Buttons ------------*/
-a:link, a:visited {
+a {
   text-decoration: none;
   color: rgb(0, 128, 17);
   font-weight: 600;
@@ -190,11 +235,12 @@ a.navlink {
 .button {
   display: inline-block;
   text-decoration: none;
-  color: #476B2E;
+  color: rgb(96, 143, 62);
   border: 2px solid;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   text-transform: uppercase;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
 }
 
 .bigbutton{
@@ -346,11 +392,4 @@ footer a:hover {
 
 html {
   scroll-behavior: smooth;
-}
-
-.tour-image {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  margin-top: 0.5rem;
 }
