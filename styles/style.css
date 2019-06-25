@@ -24,15 +24,16 @@ Website Colours: List colour hex codes here for reference
   font-family: 'Karla', sans-serif;
 }
 
-img, .img {
-  max-width: 100%;
+img {
+  max-width: 60%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.carimg {
+.carimage {
   min-height: 30vh;
+  margin-top: 1rem;
 }
 
 /* ---- UNIVERSAL STYLES --------------------------- */
@@ -42,7 +43,6 @@ section {
 }
 
 .padded {
-  padding-right: 1rem;
   margin: 1rem 0;
 }
 
@@ -142,7 +142,7 @@ section {
 /* ---- Typography ---- */
 body {
   color: rgb(60,60,60);
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 }  
 
 h1,h2,h3,h4,h5,h6 {
@@ -176,13 +176,13 @@ p, li {
 }
 
 .logo {
-  max-width: 3rem;
+  max-width: 4rem;
   display: inline-block;
 }
 
 .icon {
-  max-width: 2rem;
-  display: inline-flex;
+  max-width: 1.4rem;
+  margin: 0 0.2rem;
 }
 
 .quote-icon {
@@ -267,6 +267,7 @@ a.navlink {
   font-weight: 400;
   padding: 0 1rem;
   text-align: right;
+  font-size: 1.2rem;
 }
 
 .button {
@@ -303,7 +304,7 @@ a.navlink {
 .center {
   align-content: center;
   text-align: center;
-  margin: 0;
+  margin-bottom: 2px;
   padding:0;
 }
 
@@ -403,7 +404,8 @@ header {
 }
 
 .mobile-nav a {
-  display: inline;
+  display: block;
+  line-height: 1.5;
 }
 
 footer {
