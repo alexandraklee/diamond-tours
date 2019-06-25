@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Luxury Tours and Transportation Bali
+title: Premium Tours and Transportation Bali
 banner-title: About Us
 banner-subtitle: Transport  <span class = "diamond"> &#9830; </span> Transfers <span style="color:#beff9f"> &#9830; </span> Tours
 banner-image: cafe.jpg
@@ -45,7 +45,7 @@ daydrive:
                         Have peace of mind as our profeessional chauffers take care of your journey. All transportation costs are included in prices. Enjoy the ride no matter where you’re going.
                     </p>
 
-                    <a class="button booknow" href="/contact"> Book Now </a>
+                    <!-- <a class="button booknow" href="/contact"> Book Now </a> -->
             </div>
         </div>
         <br>
@@ -62,7 +62,7 @@ daydrive:
                     <p>
                         We provide 5-7 seater MPVs with convertiable back seats and front and back air conditioning, providing full comfort and safety.
                     </p>
-                    <a class="button booknow" href="/contact"> Book Now </a>
+                    <!-- <a class="button booknow" href="/contact"> Book Now </a> -->
             </div>
             <!-- Car 2 image -->
             <div class="col-6_sm-12 carimage"> <img src="images/car1.jpg" alt="Image of Car 2"> </div> 
@@ -72,47 +72,46 @@ daydrive:
 
 
 <section>
-        <div class="lightblock">
-          <!-- Transfer Prices -->
-          <div class="grid mob-flip">
-            <div class="col-7_sm-12 bg-fixed" style="background-image:url('/images/plane.jpg')">
+    <div class="lightblock">
+        <!-- Transfer Prices -->
+        <div class="grid mob-flip">
+        <div class="col-7_sm-12 bg-fixed" style="background-image:url('/images/plane.jpg')">
+        </div>
+        <!-- Airport transfers price -->
+        <div class="col-5_sm-12-middle">
+            <h4>Airport Transfers</h4>
+            Airport to:
+            <div class="grid-noGutter">
+            {% for item in page.air-transf %}
+            <div class="col-8_sm-12 text">
+                <p> {{item.name}} </p>
             </div>
-            <!-- Airport transfers price -->
-            <div class="col-5_sm-12-middle">
-              <h4>Airport Transfers</h4>
-              Airport to:
-              <div class="grid-noGutter">
-                {% for item in page.air-transf %}
+            <div class="col-4_sm-12 text">
+                <p>IDR {{item.price}} <span style="font-size: 0.8rem">000</span></p>
+            </div>
+            {% endfor %}
+            </div>
+    
+        </div>
+        </div>
+    
+        <div class="grid mob-flip padded">
+        <!-- Airport transfers price -->
+        <div class="col-5_sm-12-middle">
+            <h4>Half/Full Day</h4>
+            <div class="grid-noGutter">
+                {% for item in page.daydrive %}
                 <div class="col-8_sm-12 text">
-                  <p> {{item.name}} </p>
+                    <p> {{item.name}} </p>
                 </div>
                 <div class="col-4_sm-12 text">
-                  <p>IDR {{item.price}} <span style="font-size: 0.8rem">000</span></p>
+                    <p> IDR {{item.price}} <span style="font-size: 0.8rem">000</span> </p>
                 </div>
                 {% endfor %}
-              </div>
-      
-            </div>
-          </div>
-      
-          <div class="grid mob-flip padded">
-          <!-- Airport transfers price -->
-          <div class="col-5_sm-12-middle">
-              <h4>Half/Full Day</h4>
-              <div class="grid-noGutter">
-                  {% for item in page.daydrive %}
-                  <div class="col-8_sm-12 text">
-                      <p> {{item.name}} </p>
-                  </div>
-                  <div class="col-4_sm-12 text">
-                      <p> IDR {{item.price}} <span style="font-size: 0.8rem">000</span> </p>
-                  </div>
-                  {% endfor %}
-              </div>
-          </div>
-            <div class="col-7_sm-12 bg-image" style="background-image:url('/images/woman-boy.jpg')">
             </div>
         </div>
-      
-        <a class="button bigbooknow" href="/contact"> Book Now </a>
-      </section>
+        <div class="col-7_sm-12 bg-image" style="background-image:url('/images/woman-boy.jpg')">
+        </div>
+    </div>
+    <a class="button bigbutton" href="/contact"> Book Now </a>
+</section>

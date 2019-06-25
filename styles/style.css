@@ -43,6 +43,7 @@ section {
 
 .padded {
   padding-right: 1rem;
+  margin-top: 1rem;
 }
 
 .tour-card, .tour-card:hover {
@@ -162,6 +163,37 @@ p, li {
   list-style: none;
 }
 
+.padded h5 {
+  font-weight: 500;
+}
+
+.logo {
+  max-width: 3rem;
+  display: inline-block;
+}
+
+.icon {
+  max-width: 2rem;
+  display: inline-flex;
+}
+
+.quote-icon {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+/* Typing animation */
+.typing, .typing h2 {
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#typed {color: teal;}
+#typed .seafoam {color: #72BDA3;}
+#typed .tealblue {color: #5B97AC;}
+#typed .pink {color: #E8B650;}
+
 @media (max-width: 576px) {
   .photo-list li {
     display: none;
@@ -250,9 +282,10 @@ a.navlink {
   border: 2px solid;
   width: 100%;
   text-align: center;
-  margin: 2rem;
+  margin: 2rem 0;
   text-transform: uppercase;
   padding: 1rem;
+  font-size: 1.2rem;
 }
 
 
@@ -271,7 +304,6 @@ a.navlink {
 
 .right {
   text-align: right;
-  align-content: flex-end;
   padding: 0;
   margin: 0;
 }

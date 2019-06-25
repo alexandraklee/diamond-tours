@@ -1,21 +1,21 @@
 ---
 layout: default
-title: Luxury Tours and Transportation Bali
+title: Premium Tours and Transportation Bali
 banner-title: Diamond Tours Bali
-banner-subtitle: Transport  <span style="color:#beff9f"> &#9830; </span> Transfers <span style="color:#beff9f"> &#9830; </span> Tours
+banner-subtitle: Transport  <div><span class="icon"><img src="images/car.psd"/></span></div> Transfers <span style="color:#beff9f"> &#9830; </span> Tours
 banner-image: greenbanner.jpeg
 ---
 
 <!-- Typing JS -->
-<section>
+<section class="typing">
 <div class="block">
-    <h2 class="green"> We can 
+    <h2> We can 
         <span id="typed"></span>
     </h2>
     <div id="typed-strings">
-        <span> drive you anywhere </span>
-        <span> show you places </span>
-        <span> take you around the <strong> 'Island of Gods' </strong> </span>
+        <div><span class="seafoam"> drive you anywhere </span></div>
+        <div><span class="tealblue"> show you places </span></div>
+        <div><span class="pink"> bring you around the <strong> 'Island of Gods' </strong> </span></div>
     </div>
 </div>
 </section>
@@ -44,7 +44,6 @@ banner-image: greenbanner.jpeg
                     Customised Private Bali Tours tailored to your interests and desires.
                     </li>
             </ul>
-            Let us bring you around the 'Island of Gods'!
         </p>
     </div>
 </div>
@@ -117,6 +116,17 @@ banner-image: greenbanner.jpeg
                     <a href="/cars" class="button booknow"> More Info </a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section>
+    {% for review in page.reviews %}
+    <div class="grid block {{ review.theme }}">
+        <div class="col-5 padded">
+            <span class="quote-icon">" </span>
+            <h3> {{ review.name }} </h3>
         </div>
     </div>
 </section>
