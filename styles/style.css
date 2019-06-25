@@ -94,6 +94,10 @@ section {
   padding: 0 1rem;
 }
 
+.blockdash {
+  border-bottom: 0.05rem dashed #799367;
+}
+
 .dark {
   background-color: #f5f5f5;
 }
@@ -167,6 +171,10 @@ p, li {
   font-weight: 500;
 }
 
+.padded h2 {
+  margin: 1rem 0 2rem 0;
+}
+
 .logo {
   max-width: 3rem;
   display: inline-block;
@@ -180,6 +188,7 @@ p, li {
 .quote-icon {
   font-size: 6rem;
   line-height: 1;
+  padding-right: 2rem;
 }
 
 /* Typing animation */
@@ -202,10 +211,6 @@ p, li {
   .photo-list li:first-of-type {
     display: block;
   }
-}
-
-.block h2 {
-  padding-top: 1rem;
 }
 
 .tour-card p {

@@ -4,6 +4,16 @@ title: Premium Tours and Transportation Bali
 banner-title: Diamond Tours Bali
 banner-subtitle: Transport  <div><span class="icon"><img src="images/car.psd"/></span></div> Transfers <span style="color:#beff9f"> &#9830; </span> Tours
 banner-image: greenbanner.jpeg
+reviews:
+- theme: light
+  description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quis, fuga ipsa animi quo ut debitis culpa error id quae qui explicabo eos excepturi provident, beatae dicta doloremque quaerat deleniti.
+  name: CK, 2019
+- theme: dark
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae officiis, error voluptas ea nobis eveniet rem modi nam. Eius laborum voluptates eos deleniti voluptatibus asperiores voluptate aspernatur ipsam. Laudantium?
+  name: Bob, 2019
+- theme: light
+  description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis repudiandae vel eius quaerat maxime error molestias aut voluptate ut esse alias, ipsa, exercitationem hic voluptatum ad cumque fuga quod sed?
+  name: Amy, 2019
 ---
 
 <!-- Typing JS -->
@@ -22,7 +32,7 @@ banner-image: greenbanner.jpeg
 
 <!-- Text -->
 <section>
-<div class="grid-noGutter block" id="about">
+<div class="grid-noGutter block">
     <div class="col-4_xs-12">
         <h2>
             Who are we
@@ -50,9 +60,9 @@ banner-image: greenbanner.jpeg
 </section>
 
 <!-- Pricing -->
-<section id="pricing">
+<section>
     <div class="block">
-        <h2>
+        <h2 class="padded">
             Chauffer Pricing
         </h2>
         <!-- Transfers price -->
@@ -122,11 +132,28 @@ banner-image: greenbanner.jpeg
 
 <!-- Reviews -->
 <section>
+<h2 class="padded">Testimonials</h2>
     {% for review in page.reviews %}
-    <div class="grid block {{ review.theme }}">
-        <div class="col-5 padded">
+    <div class="grid blockdash {{ review.theme }}">
+        <div class="col-2 right">
             <span class="quote-icon">" </span>
-            <h3> {{ review.name }} </h3>
         </div>
+        <div class="col-10">
+            <p>
+                {{review.description}}
+            </p>
+            <h5 class="right">
+                {{review.name}}
+            </h5>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+<!-- Book now button -->
+<section>
+    <div class="relative">
+        <span class="price"> {{page.tourprice}} </span>
+        <a href="/contact" class="bigbutton"> Book Now! </a>
     </div>
 </section>
