@@ -43,7 +43,7 @@ section {
 
 .padded {
   padding-right: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .tour-card, .tour-card:hover {
@@ -400,6 +400,10 @@ header {
 
 .mobile-nav {
   display: none;
+}
+
+.mobile-nav a {
+  display: inline;
 }
 
 footer {
