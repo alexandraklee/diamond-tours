@@ -10,23 +10,24 @@ banner-subtitle: <span style="color:#beff9f"> &#9830; </span> Explore Bali <span
 <section>
   {% for tour in site.tours%}
     <div class="grid-noGutter block {{tour.theme}}">
-    <div class="col-4_sm-12">
-        <a href="{{tour.url}}">
-          <h2> {{tour.title}} </h2>
-        </a>
-        <p> {{tour.description}} </p>
-        {% for tag in tour.tags %}
-        <p class="tags"> #{{tag.tag-name}} </p>
-        {% endfor %}
-      </div>
-      <div class="grid col-8_sm-12">
-        {% for photo in tour.photos limit: 3 %}
-          <div class="col-4 tags">
-            <!-- Tour Images -->
-            <div class="tour-img" style="background-image:url('/images/{{photo.image}}');">
-            </div>
-          </div>
+      <div class="col-4_sm-12">
+        <div class="tour-card">
+          <a href="{{tour.url}}">
+            <h2> {{tour.title}} </h2>
+          </a>
+          <p> {{tour.description}} </p>
+          {% for tag in tour.tags %}
+            <p class="tags"> #{{tag}} </p>
           {% endfor %}
+        </div>
+        <div class="grid col-8_sm-12">
+          {% for photo in tour.photos limit: 3 %}
+            <div class="col-4">
+              <!-- Tour Images -->
+              <div class="tour-image" style="background-image:url('/images/tours/{{photo.image}}');"> </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   {% endfor %}

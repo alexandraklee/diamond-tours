@@ -38,11 +38,16 @@ img, .img {
 /* ---- UNIVERSAL STYLES --------------------------- */
 /* ---- Layout ---- */
 section {
-  padding: 1vh 7vh;
+  padding: 1vh 7vw;
 }
 
 .padded {
   padding-right: 1rem;
+}
+
+.tour-card {
+  border: 1px solid #9FB980;
+  margin-bottom: 1rem;
 }
 
 /* ----- Banner ----- */
@@ -137,6 +142,8 @@ p, li {
 
 .tags {
   display: inline-block;
+  line-height: 0;
+  letter-spacing: 0.3px;
 }
 
 a h2 {
@@ -343,4 +350,7 @@ html {
 
 .tour-image {
   min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0.5rem;
 }
