@@ -25,7 +25,7 @@ Website Colours: List colour hex codes here for reference
 }
 
 img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -35,6 +35,8 @@ img {
   min-height: 30vh;
   margin-top: 1rem;
 }
+
+
 
 /* ---- UNIVERSAL STYLES --------------------------- */
 /* ---- Layout ---- */
@@ -116,7 +118,7 @@ section {
     column-count: 1;
   }
 
-  img, .img {
+  img {
     margin-top: 1rem;
   }
 }
@@ -320,10 +322,10 @@ a.navlink {
   column-gap: 1rem;
 }
 
-.photo-gallery .item {
+.photo-gallery .item img {
   display: inline-block;
   margin-bottom: 0.5rem;
-  width:100%
+  width:100%;
 }
 
 .bg-image {
