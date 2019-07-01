@@ -364,6 +364,8 @@ a.navlink {
   .mob-flip {
     flex-direction: column-reverse;
   }
+  .bg-image {
+    background-attachment: fixed;
   }
 }
 /* ---------- HEADER & FOOTER --------- */
