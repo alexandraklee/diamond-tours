@@ -107,7 +107,6 @@ section {
   .icon {
     max-width: 0.5rem;
   }
-
 }
 
 .block {
@@ -163,8 +162,18 @@ section {
 /* ---- Typography ---- */
 body {
   color: rgb(60,60,60);
-  padding-top: 0.5rem;
+  padding-top: 2.8rem;
 }  
+
+@media (max-width: 750px) {
+  .center {
+    padding: 0;
+  }
+
+  body {
+    padding-top: 3.3rem;
+  }
+}
 
 h1,h2,h3,h4,h5,h6 {
   line-height: 1.2;
@@ -326,7 +335,7 @@ a.navlink {
   align-content: center;
   text-align: center;
   margin-bottom: 1px;
-  padding:0;
+  padding: 0.1rem;
 }
 
 .right {
@@ -407,7 +416,7 @@ header {
 
 @media (max-width: 576px) {
   body {
-    padding-top: 4rem;
+    padding-top: 3.8rem;
   }
   .mobile-header {
     display: flex;
