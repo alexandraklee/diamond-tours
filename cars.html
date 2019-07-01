@@ -34,7 +34,7 @@ daydrive:
             <!-- Car 1 image -->
             <div class="col-6_sm-12 carimage"> <img src ="/images/car1.jpg" alt="Image of Car 1"> </div>
             <!-- Car 1 text -->
-            <div class="col-6_sm-12-middle">
+            <div class="col-6_sm-12">
                     <h5>
                         Exceptional standards of service
                     </h5>
@@ -47,9 +47,9 @@ daydrive:
             </div>
         </div>
         <!-- Car 2 div -->
-        <div class="grid">
+        <div class="grid mob-flip">
             <!-- Car 2 text -->
-            <div class="col-6_sm-12 cartext">
+            <div class="col-6_sm-12-middle cartext">
                     <h5>
                         Seamless travel
                     </h5>
@@ -91,7 +91,7 @@ daydrive:
 <section>
     <div class="lightblock">
         <!-- Transfer Prices -->
-        <div class="grid mob-flip">
+        <div class="grid">
             <div class="col-7_sm-12 bg-fixed" style="background-image:url('/images/plane.jpg')"> </div>
             <!-- Airport transfers price -->
         <div class="col-5_sm-12-middle">
@@ -99,10 +99,10 @@ daydrive:
             Airport to:
             <div class="grid-noGutter">
             {% for item in page.air-transf %}
-            <div class="col-8_sm-12 text">
+            <div class="col-8_sm-6 text">
                 <p> {{item.name}} </p>
             </div>
-            <div class="col-4_sm-12 text">
+            <div class="col-4_sm-6 text">
                 <p>IDR {{item.price}} <span style="font-size: 0.8rem">000</span></p>
             </div>
             {% endfor %}
@@ -117,10 +117,10 @@ daydrive:
             <h4>Half/Full Day</h4>
             <div class="grid-noGutter">
                 {% for item in page.daydrive %}
-                <div class="col-8_sm-12 text">
+                <div class="col-8_sm-6 text">
                     <p> {{item.name}} </p>
                 </div>
-                <div class="col-4_sm-12 text">
+                <div class="col-4_sm-6 text">
                     <p> IDR {{item.price}} <span style="font-size: 0.8rem">000</span> </p>
                 </div>
                 {% endfor %}

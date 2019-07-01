@@ -331,14 +331,22 @@ a.navlink {
 .bg-image {
   background-size: cover;
   background-position: center;
+  min-height: 40vh;
 }
 
 .bg-fixed {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  min-height: 40vh;
 }
 
+@media(max-width:668px) {
+  .mob-flip {
+    flex-direction: column-reverse;
+  }
+  }
+}
 /* ---------- HEADER & FOOTER --------- */
 header {
   padding: 0;
