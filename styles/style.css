@@ -87,8 +87,9 @@ section {
 .banner-text {
   background-color: #0000006e;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1.5rem;
   color: #FFFFFF;
+  min-width: 55vw;
 }
 
 @media (max-width: 576px) {
