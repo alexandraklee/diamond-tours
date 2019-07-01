@@ -91,6 +91,12 @@ section {
   color: #FFFFFF;
 }
 
+@media (max-width: 576px) {
+  .banner-text {
+    font-size: 1rem;
+  }
+}
+
 .block {
   border-bottom: 0.05rem solid #799367;
   padding: 0 1rem;
