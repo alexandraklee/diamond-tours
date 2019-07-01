@@ -162,7 +162,7 @@ section {
 /* ---- Typography ---- */
 body {
   color: rgb(60,60,60);
-  padding-top: 3rem;
+  padding-top: 0.5rem;
 }  
 
 h1,h2,h3,h4,h5,h6 {
@@ -413,6 +413,11 @@ header {
   .hamburger {
     display: inline-block;
     padding: 0.75rem;
+  }
+
+  .navlink {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
   }
 }
 
